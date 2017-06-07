@@ -54,12 +54,39 @@ angular.module('app')
                     access: AccessLevels.user
                 }
             })
-            .state('user.dashboard', {
-                url: '/dashboard',
+            .state('user.search', {
+                url: '/search',
                 views: {
                     'content@': {
-                        templateUrl: 'user/dashboard.html',
-                        controller: 'DashboardController'
+                        templateUrl: 'user/search.html',
+                        controller: 'searchController'
+                    }
+                }
+            })
+            .state('user.matchs', {
+                url: '/matchs',
+                views: {
+                    'content@': {
+                        templateUrl: 'user/matchs.html',
+                        controller: 'matchsController'
+                    }
+                }
+            })
+            .state('user.signup', {
+                url: '/signup',
+                views: {
+                    'content@': {
+                        templateUrl: 'user/signup.html',
+                        controller: 'signupController'
+                    }
+                }
+            })
+            .state('user.home', {
+                url: '/home',
+                views: {
+                    'content@': {
+                        templateUrl: 'user/home.html',
+                        controller: 'homeController'
                     }
                 }
             })

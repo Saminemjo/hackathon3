@@ -1,5 +1,5 @@
 angular.module('app')
-    .controller('searchController', function($scope, CurrentUser, UserService) {
+    .controller('signupController', function($scope, CurrentUser, UserService) {
         UserService.getOne(CurrentUser.user()._id).then(function(res) {
             $scope.user = res.data;
         });
