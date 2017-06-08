@@ -1,5 +1,5 @@
 angular.module('app')
-    .controller('chatController', function($scope, CurrentUser, UserService) {
+    .controller('ChatController', function($scope, CurrentUser, UserService) {
         UserService.getOne(CurrentUser.user()._id).then(function(res) {
             $scope.user = res.data;
         });
