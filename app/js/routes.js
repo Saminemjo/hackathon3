@@ -90,6 +90,15 @@ angular.module('app')
                     }
                 }
             })
+            .state('user.timeout', {
+                url: '/timeout',
+                views: {
+                    'slide@': {
+                        templateUrl: 'user/timeout.html',
+                        controller: 'TimeoutController'
+                    }
+                }
+            })
             .state('user.matchs', {
                 url: '/matchs',
                 views: {
