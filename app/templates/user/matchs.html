@@ -1,75 +1,67 @@
-<!DOCTYPE html>
-<html lang="en" ng-app="myApp">
+<a-scene>
+    <a-assets>
+        <a-asset-item id="why-female-models" src="../img/woman/D3D-P-BUS-11lo.DAE"></a-asset-item>
+        <a-asset-item id="why-male-models" src="../img/man/man.dae"></a-asset-item>
+        <img id="fall" src="../img/fall.png">
+        <img id="goggles" src="../img/goggles.png">
+        <img id="mozvr" src="../img/mozvr.png">
+        <img id="price" src="../img/price.png">
+        <img id="shadow2" src="../img/radial-shadow-2.png">
+        <img id="shoes" src="../img/shoes.png">
+        <img id="brokenHeart" src="../img/brokenHeart.png">
+        <img id="heart" src="../img/heart.png">
+				<img id="kevin" src="../img/kevin.png">
+				<img id="sandra" src="../img/sandra.png">
 
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Private Chat Application with Node.js, Socket.IO and AngularJS</title>
-	<meta name="generator" content="Bootply">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link href="./styles/bootstrap.min.css" rel="stylesheet">
-	<link href="./styles/style.css" type="text/css" rel="stylesheet">
-</head>
+    </a-assets>
+    <a-entity id="model" position="-2 0 -3">
+      <a-animation attribute="rotation" from="0 -0 0" to="0 360 0" dur="15000"
+                   easing="linear" repeat="indefinite"></a-animation>
+      <a-collada-model position=".0 0 0" rotation="0 -20 0" scale="1.5 1.5 1.5"
+                       src="#why-female-models" href="/#/user/chat"></a-collada-model>
+      <a-image src="#shadow2" rotation="-90 0 0" scale="0.5 0.5 0.5"></a-image>
+    </a-entity>
 
-<body cz-shortcut-listen="true" ng-controller='AppCtrl'>
-	<i class="fa fa-spin fa-refresh fa-5x" id="loader" style="display: none;"></i>
-	<div class="container ng-scope">
-		<h2>Private Chat Application with Node.js, Socket.IO and AngularJS</h2>
-		<h4>by <a href="http://sivasankar.in/">sivasankar.in</a></h4>
-		<hr>
-		<div class="row">
-			<div class="col-lg-8">
-				<div class="row" id="userList" style="display: block;">
-					<div ng-repeat="user in users" class="col-sm-12 ng-scope">
-						<div class="row" ng-if="user">
-							<div class="col-xs-2" ng-class="{'col-xs-push-10' : (user.username == curtrentUser)}">
-								<img ng-src=" {{user.image}} " class="img-thumbnail img-responsive img-circle pull-left " ng-class-even="pull-right
-								" ng-class-odd="pull-left " style="width:70px; ">
-							</div>
-							<div class="col-xs-10" ng-class="{'col-xs-pull-2' : (user.username == curtrentUser)}">
-								<div class="panel panel-default ">
-									<div class="panel-body ng-binding "> <strong>{{user.username}}</strong> : {{user.message}} <br>
-										<span class="label label-info ng-binding ">{{user.date | date: 'h:mma'}}</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<h2 class="text-center ">Got something to say?</h2>
-				<div class="input-group ">
-					<input id="data " type="text " ng-model="message " class="form-control " placeholder="Type your message here ">
-					<span class="input-group-btn ">
-						<button class="btn btn-primary " id="datasend " type="button " ng-click="doPost(message) ">Send!</button>
-					</span>
-				</div>
-				<div class="clearfix "></div>
-			</div>
-			<div class="col-lg-4 ">
-				<h4>Join Room</h4>
-				<div class="form-group ">
-					<label for="exampleInputEmail1 ">Your Name</label>
-					<input type="text " ng-model="join.username " class="form-control " id="join_room_email " placeholder="Enter Name " />
-				</div>
-				<div class="form-group ">
-					<label for="exampleInputEmail1 ">Room Code</label>
-					<input type="text " ng-model="join.room " class="form-control " id="join_room_code " placeholder="Enter Room Code " />
-				</div>
-				<button type="submit " id="join " ng-click="joinRoom(join) " class="btn btn-default ">Submit</button>
-				<hr>
-				<h4>Create Room</h4>
-				<div class="form-group ">
-					<label for="exampleInputEmail1 ">Your Name</label>
-					<input type="text " ng-model="create.username " class="form-control " id="create_room_email " placeholder="Enter Name " />
-				</div>
-				<button type="submit " id="create " ng-click="createRoom(create) " class="btn btn-default ">Submit</button>
-				<div class="clearfix "></div>
-			</div>
-		</div>
-	</div>
-	</div>
-	<script src="/socket.io/socket.io.js "></script>
-	<script type="text/javascript " src="./scripts/angular.min.js "></script>
-	<script type="text/javascript " src="./scripts/app.js "></script>
-</body>
 
-</html>
+    <a-entity id="model" position="2 0 -2.8">
+      <a-animation attribute="rotation" from="0 0 0" to="0 360 0" dur="15000"
+                   easing="linear" repeat="indefinite"></a-animation>
+      <a-collada-model position="-.1 0 .6" rotation="0 -20 0" scale="1.5 1.5 1.5"
+                       src="#why-male-models" href="/#/user/chat"></a-collada-model>
+      <a-image src="#shadow2" rotation="-90 0 0" scale="0.5 0.5 0.5"></a-image>
+    </a-entity>
+
+
+    <a-curvedimage id="sandra" src="#sandra" radius="5.7" theta-length="36" height="1" position="-1 2.6 -1" opacity="0.5">
+        <a-animation attribute="rotation" from="0 10 0" to="0 200 0" delay="500" dur="1000"></a-animation>
+    </a-curvedimage>
+
+		<a-curvedimage id="mozvr" src="#mozvr" radius="5.7" theta-length="36" height="1" position="0 7 -5" opacity="0.5">
+				<a-animation attribute="rotation" from="0 10 0" to="0 -200 0" delay="500" dur="1000"></a-animation>
+		</a-curvedimage>
+
+    <a-curvedimage id="kevin" src="#kevin" radius="5.7" theta-length="36" height="1" position="1 2.6 1" opacity="0.5">
+        <a-animation attribute="rotation" from="0 10 0" to="0 -240 0" delay="500" dur="1000"></a-animation>
+    </a-curvedimage>
+
+
+
+
+
+    <a-entity>
+        <a-cylinder position="0 0.5 0" radius="4" height="1.6" side="back" open-ended="true" color="#FFF"></a-cylinder>
+    </a-entity>
+
+    <a-entity position="0 0.0 0">
+        <a-camera>
+            <a-cursor color="#4CC3D9"></a-cursor>
+            <a-camera>
+    </a-entity>
+
+
+
+    <a-sky color="#ECECEC"></a-sky>
+    <a-light type="directional" color="#fff" intensity="0.2" position="-1 2 1"></a-light>
+    <a-light type="ambient" color="#fff"></a-light>
+
+</a-scene>

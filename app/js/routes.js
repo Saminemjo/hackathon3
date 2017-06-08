@@ -81,6 +81,15 @@ angular.module('app')
                     }
                 }
             })
+            .state('user.chat', {
+                url: '/chat',
+                views: {
+                    'slide@': {
+                        templateUrl: 'user/chat.html',
+                        controller: 'ChatController'
+                    }
+                }
+            })
             .state('user.matchs', {
                 url: '/matchs',
                 views: {
