@@ -8,6 +8,8 @@
         <img id="price" src="../img/price.png">
         <img id="shadow2" src="../img/radial-shadow-2.png">
         <img id="shoes" src="../img/shoes.png">
+        <img id="brokenHeart" src="../img/brokenHeart.png">
+        <img id="heart" src="../img/heart.png">
       </a-assets>
 
       <a-entity id="model" position="0 0 -3">
@@ -38,15 +40,15 @@
                  scale=".4 .4 .4"></a-image>
       </a-cylinder>
 
-      <a-curvedimage id="stereoscopic-fall-collection-text" src="#fall" radius="5.7"
-                     theta-length="18" height=".45" position="0 0.9 0" scale=".4 .4 .4">
+      <a-curvedimage id="brokenHeart" src="#brokenHeart" radius="5.7"
+                     theta-length="10" height=".8" position="0 0.9 0" scale=".4 .4 .4" href="/#/user/otherUser" >
         <a-animation attribute="rotation" from="0 180 0" to="0 210 0" delay="750"
                      dur="1000"></a-animation>
       </a-curvedimage>
 
-      <a-curvedimage id="shoes" src="#shoes" radius="5.7" theta-length="18" height=".8"
-                     position="0 0.9 0" scale=".4 .4 .4">
-        <a-animation attribute="rotation" from="0 180 0" to="0 130 0" delay="750"
+      <a-curvedimage id="heart" src="#heart" radius="5.7" theta-length="10" height=".8"
+                     position="0 0.9 0" scale=".4 .4 .4"  href="/#/user/otherUser" >
+        <a-animation attribute="rotation" from="0 180 0" to="0 140 0" delay="750"
                      dur="1000"></a-animation>
       </a-curvedimage>
 
@@ -55,7 +57,16 @@
                     color="#FFF"></a-cylinder>
       </a-entity>
 
+      <a-entity position="0 0.0 0">
+           <a-camera>
+             <a-cursor color="#4CC3D9"></a-cursor>
+           <a-camera>
+         </a-entity>
+
+
+
       <a-sky color="#ECECEC"></a-sky>
       <a-light type="directional" color="#fff" intensity="0.2" position="-1 2 1"></a-light>
       <a-light type="ambient" color="#fff"></a-light>
+
     </a-scene>
