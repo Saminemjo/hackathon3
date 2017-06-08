@@ -16,7 +16,7 @@ angular.module('app')
             .state('anon.home', {
                 url: '/',
                 views: {
-                    'content@': {
+                    'slide@': {
                         templateUrl: 'anon/home.html',
                         controller: 'MainController'
                     }
@@ -25,7 +25,7 @@ angular.module('app')
             .state('anon.login', {
                 url: '/login',
                 views: {
-                    'content@': {
+                    'slide@': {
                         templateUrl: 'anon/login.html',
                         controller: 'LoginController'
                     }
@@ -34,7 +34,7 @@ angular.module('app')
             .state('anon.register', {
                 url: '/register',
                 views: {
-                    'content@': {
+                    'slide@': {
                         templateUrl: 'anon/register.html',
                         controller: 'RegisterController'
                     }
@@ -57,16 +57,34 @@ angular.module('app')
             .state('user.search', {
                 url: '/search',
                 views: {
-                    'content@': {
+                    'slide@': {
                         templateUrl: 'user/search.html',
                         controller: 'searchController'
+                    }
+                }
+            })
+            .state('user.otherUser', {
+                url: '/otherUser',
+                views: {
+                    'slide@': {
+                        templateUrl: 'user/otherUser.html',
+                        controller: 'otherUserController'
+                    }
+                }
+            })
+            .state('user.dual', {
+                url: '/dual',
+                views: {
+                    'slide@': {
+                        templateUrl: 'user/dual.html',
+                        controller: 'dualController'
                     }
                 }
             })
             .state('user.matchs', {
                 url: '/matchs',
                 views: {
-                    'content@': {
+                    'slide@': {
                         templateUrl: 'user/matchs.html',
                         controller: 'matchsController'
                     }
@@ -93,7 +111,7 @@ angular.module('app')
             .state('user.profile', {
                 url: '/profile',
                 views: {
-                    'content@': {
+                    'slide@': {
                         templateUrl: 'user/profile.html',
                         controller: 'ProfileController'
                     }
