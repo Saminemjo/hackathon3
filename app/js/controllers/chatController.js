@@ -7,4 +7,5 @@ angular.module('app')
              document.getElementById("contentchat").innerHTML='<object type="text/html" data="http://cjroth.com/aframe-keyboard/" ></object>';
         }
         load_home();
+
     });

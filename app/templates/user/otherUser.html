@@ -8,6 +8,12 @@
         <img id="price" src="../img/price.png">
         <img id="shadow2" src="../img/radial-shadow-2.png">
         <img id="shoes" src="../img/shoes.png">
+        <img id="brokenHeart" src="../img/brokenHeart.png">
+        <img id="heart" src="../img/heart.png">
+        <img id="b" src="../img/38.png">
+        <img id="sandra" src="../img/sandra.png">
+
+
       </a-assets>
 
       <a-entity id="model" position="0 0 -3">
@@ -18,35 +24,35 @@
         <a-image src="#shadow2" rotation="-90 0 0" scale="0.5 0.5 0.5"></a-image>
       </a-entity>
 
-      <a-curvedimage id="mozvr-logo" src="#mozvr" radius="5.7" theta-length="36" height="1"
-                     position="0 2.6 -1" opacity="0.5">
+      <a-curvedimage id="sandra" src="#sandra" radius="5.7" theta-length="36" height="1"
+                     position="1 2.4 -1" opacity="0.5">
         <a-animation attribute="rotation" from="0 10 0" to="0 200 0" delay="500"
                      dur="1000"></a-animation>
       </a-curvedimage>
 
-      <a-image id="price" src="#price" width="7" height="3.5" scale="0.2 0.2 0.2">
-        <a-animation attribute="position" from="0 2.8 -6" to="2.25 2.8 -6" delay="1000"
+      <a-curvedimage id="mozvr" src="#mozvr" radius="5.7" theta-length="36" height="1" position="0 7.5 -5" opacity="0.5">
+          <a-animation attribute="rotation" from="0 10 0" to="0 -200 0" delay="500" dur="1000"></a-animation>
+      </a-curvedimage>
+
+
+      <a-curvedimage id="b" src="#b" radius="5.7" theta-length="36" height="1"
+                     position="3 2.2 1" opacity="0.5">
+        <a-animation attribute="rotation" from="0 10 0" to="0 -200 0" delay="500"
                      dur="1000"></a-animation>
-      </a-image>
+      </a-curvedimage>
 
-      <a-cylinder id="goggles" color="#101010" height="0.02" radius="0.8">
-        <a-animation attribute="rotation" from="-270 0 0" to="-90 0 0" dur="750" delay="1000"
-                     fill="both"></a-animation>
-        <a-animation attribute="position" from="8 0 -9" to="8 3.5 -9" dur="750" delay="1000"
-                     fill="both"></a-animation>
-        <a-image src="#goggles" width="2" height="1" rotation="90 0 0" position="0 -.05 0"
-                 scale=".4 .4 .4"></a-image>
-      </a-cylinder>
 
-      <a-curvedimage id="stereoscopic-fall-collection-text" src="#fall" radius="5.7"
-                     theta-length="18" height=".45" position="0 0.9 0" scale=".4 .4 .4">
+
+
+      <a-curvedimage id="brokenHeart" src="#brokenHeart" radius="5.7"
+                     theta-length="10" height=".8" position="0 0.9 0" scale=".4 .4 .4" href="/#/user/otherUser" >
         <a-animation attribute="rotation" from="0 180 0" to="0 210 0" delay="750"
                      dur="1000"></a-animation>
       </a-curvedimage>
 
-      <a-curvedimage id="shoes" src="#shoes" radius="5.7" theta-length="18" height=".8"
-                     position="0 0.9 0" scale=".4 .4 .4"  href="/#/user/search" >
-        <a-animation attribute="rotation" from="0 180 0" to="0 130 0" delay="750"
+      <a-curvedimage id="heart" src="#heart" radius="5.7" theta-length="10" height=".8"
+                     position="0 0.9 0" scale=".4 .4 .4"  href="/#/user/otherUser" >
+        <a-animation attribute="rotation" from="0 180 0" to="0 140 0" delay="750"
                      dur="1000"></a-animation>
       </a-curvedimage>
 

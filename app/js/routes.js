@@ -86,7 +86,7 @@ angular.module('app')
                 views: {
                     'slide@': {
                         templateUrl: 'user/chat.html',
-                        controller: 'chatController'
+                        controller: 'ChatController'
                     }
                 }
             })
