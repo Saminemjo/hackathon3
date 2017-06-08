@@ -16,6 +16,8 @@
                 <li ui-sref-active="active"><a ui-sref="user.search" ng-show="auth.isAuthenticated()">Search</a></li>
                 <li ui-sref-active="active"><a ui-sref="user.matchs" ng-show="auth.isAuthenticated()">Matchs</a></li>
                 <li ui-sref-active="active"><a ui-sref="user.profile" ng-show="auth.isAuthenticated()">Profile</a></li>
+                <li ui-sref-active="active"><a class="right" ng-click="logout()" ng-show="auth.isAuthenticated()" href='#'>Logout</a></li>
+
             </ul>
         </div>
     </div>
