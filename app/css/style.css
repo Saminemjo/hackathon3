@@ -2,10 +2,29 @@
     overflow: hidden;
 }
 
-
-
 #contentchat object{
   margin-top: -100px;
     width: 100%;
     height: 950px;
+}
+.homeContainer{
+background-image: url('../img/love1.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+width: 100%;
+height: 800px;
+color: white;
+}
+.title{
+  color: white;
+}
+.homeContainer2{
+background-image: url('../img/love2.jpg');
+background-size: cover;
+background-position: bottom;
+background-repeat: no-repeat;
+width: 100%;
+height: 800px;
+color: white;
 }
