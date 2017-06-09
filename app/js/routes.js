@@ -72,6 +72,15 @@ angular.module('app')
                     }
                 }
             })
+            .state('user.otherUser3', {
+                url: '/otherUser3',
+                views: {
+                    'slide@': {
+                        templateUrl: 'user/otherUser3.html',
+                        controller: 'otherUser3Controller'
+                    }
+                }
+            })
             .state('user.dual', {
                 url: '/dual',
                 views: {
