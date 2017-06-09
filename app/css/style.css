@@ -1,34 +1,48 @@
-#contentchat{
+#contentchat {
     overflow: hidden;
 }
 
-#contentchat object{
-  margin-top: -100px;
+#contentchat object {
+    margin-top: -100px;
     width: 100%;
     height: 950px;
 }
-.homeContainer{
-background-image: url('../img/love1.jpg');
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-width: 100%;
-height: 800px;
-color: white;
+
+.headerhome {
+    float: right;
+    width: 50%;
+    z-index: 3
 }
+
+.homeContainer {
+    background-image: url('../img/love1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 800px;
+    color: white;
+}
+
 .hometext {
-float: right;
-text-align: right;
+    padding-top: 25px;
+    width: 100%;
+    text-align: center;
+    padding-right: 10%;
+    z-index: 1;
 }
-.title{
-  color: white;
+
+.title img {
+    width: 200px;
+    padding-bottom: 15px;
 }
-.homeContainer2{
-background-image: url('../img/love2.jpg');
-background-size: cover;
-background-position: bottom;
-background-repeat: no-repeat;
-width: 100%;
-height: 800px;
-color: white;
+
+.homeContainer2 {
+    background-image: url('../img/love2.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 800px;
+    color: white;
 }
